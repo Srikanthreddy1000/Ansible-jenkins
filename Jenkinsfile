@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage ('git clone') {
             steps {
-                url: "https://github.com/Srikanthreddy1000/Ansible-jenkins.git",
-                git branch: "main"
+                git branch: "main",
+                url: "https://github.com/Srikanthreddy1000/Ansible-jenkins.git" 
             }
         }
         stage ('ansible') {

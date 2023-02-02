@@ -9,7 +9,7 @@ pipeline {
         }
         stage ('ansible') {
             steps {
-                sh "ansible-playbook -i hosts playbook.yml"
+                sh "ansible -i hosts -m ping all"
             }
         }
     }
